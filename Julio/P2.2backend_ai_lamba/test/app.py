@@ -14,7 +14,7 @@ and logs the result to CloudWatch for verification.
 # Function to securely read Gemini key from S3 (from P2.1)
 def get_gemini_api_key():
     s3 = boto3.client('s3')
-    bucket_name = 'groupme-ai-secrets'
+    bucket_name = 'groupme-bucket'
     file_key = 'gemini_api_key.txt'
     response = s3.get_object(Bucket=bucket_name, Key=file_key)
     return response['Body'].read().decode('utf-8').strip()

@@ -13,7 +13,7 @@ Adds robust error handling and IAM-secure design for S3 + Gemini API.
 def get_gemini_api_key():
     try:
         s3 = boto3.client('s3')
-        bucket_name = 'groupme-ai-secrets'
+        bucket_name = 'groupme-bucket'
         file_key = 'gemini_api_key.txt'
 
         response = s3.get_object(Bucket=bucket_name, Key=file_key)

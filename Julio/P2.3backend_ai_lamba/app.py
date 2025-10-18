@@ -14,7 +14,7 @@ and logs the structured event data to CloudWatch for validation.
 # === Secure Key Retrieval (P2.1) ===
 def get_gemini_api_key():
     s3 = boto3.client('s3')
-    bucket_name = 'groupme-ai-secrets'         # ✅ your S3 bucket name
+    bucket_name = 'groupme-bucket'         # ✅ your S3 bucket name
     file_key = 'gemini_api_key.txt'            # ✅ your file name in S3
     response = s3.get_object(Bucket=bucket_name, Key=file_key)
     return response['Body'].read().decode('utf-8').strip()
