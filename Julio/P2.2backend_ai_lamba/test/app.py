@@ -5,6 +5,7 @@ import json
 """
 AWS Lambda Function - GroupMe + Gemini AI Integration
 -----------------------------------------------------
+Phase: P2.2
 This Lambda receives GroupMe messages via a bot callback,
 sends the text to Google's Gemini API for AI summarization,
 and logs the result to CloudWatch for verification.
