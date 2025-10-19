@@ -6,7 +6,7 @@ import json
 AWS Lambda Function - GroupMe + Gemini AI Integration (Secure Version)
 ----------------------------------------------------------------------
 Phase: P2.4
-Adds robust error handling and IAM-secure design for S3 + Gemini API.
+Adds robust error handling and IAM-secure design for S3 + Gemini API....
 """
 
 # === Secure Key Retrieval with Error Handling (P2.4) ===
