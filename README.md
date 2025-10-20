@@ -32,3 +32,5 @@ Scheduling: Finally, it uses the fresh Access Token to send a direct HTTP POST r
 
 This system guarantees that no event is lost, making student life simpler and more organized.
 
+Try it out here: https://evento-ai.vercel.app/
+Demo Video: https://youtu.be/znxbHXgup5M
